@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Survey title="Hereditary Cancer Risk" initial_question_id="mf">
+  <Splash show="true">
+This application will help you determine if a person is appropriate for cancer genetics risk evaluation for hereditary breast and ovarian cancer.
+
+The 2005 U.S. Preventive Services Task Force recommendations on genetic risk assessment and BRCA mutation testing for breast and ovarian cancer susceptibility are used for unaffected women.  This is a grade B USPSTF recommendation and according to the Patient Protection and Affordable Care Act insurers are prohibited from charging co-payments or deductibles for Level B preventive care.
+
+The 2011 Breast and Ovarian Cancer Genetic Assessment from the National Comprehensive Cancer Network are used for women affected with breast and/or ovarian cancer and for men.
+
+Disclaimer: this application is not a substitute for medical evaluation, diagnosis, and treatment.
+  </Splash>
+  <QuestionList>
+    <Question id="mf" text="Is this assessment being performed for a male or female?">
+      <Answer text="Female" score="0" next_question_id="mrb"/>
+      <Answer text="Male" score="0" next_question_id="mb"/>
+    </Question>
+    <Question id="mrb" text="Does this person have any male relatives that have been diagnosed with breast cancer?">
+      <Answer text="No" score="0" next_question_id="fbo"/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+    </Question>
+    <Question id="fbo" text="Does this person have any female relatives that have been diagnosed with both breast and ovarian cancer?">
+      <Answer text="No" score="0" next_question_id="dbo"/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+    </Question>
+    <Question id="dbo" text="Has this person been diagnosed with breast and/or ovarian cancer?">
+      <Answer text="No" score="0" next_question_id="naj"/>
+      <Answer text="Breast" score="0" next_question_id="bu50"/>
+      <Answer text="Ovarian" score="1" next_question_id=""/>
+      <Answer text="Both" score="1" next_question_id=""/>
+    </Question>
+    <Question id="bu50" text="Is this person under 50, had bilateral breast cancer, or is 'triple negative' (ER-,PR-,HER2-)?">
+      <Answer text="No" score="0" next_question_id="baj"/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+    </Question>
+    <Question id="baj" text="Is this person of Ashkenazi Jewish heritage?">
+      <Answer text="No" score="0" next_question_id="adb"/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+    </Question>
+    <Question id="adb" text="Does this person have any 1st, 2nd, or 3rd degree female relatives that have been diagnosed with breast cancer?">
+      <Answer text="No" score="0" next_question_id="3do"/>
+      <Answer text="One" score="0" next_question_id="u50b"/>
+      <Answer text="Two or More" score="1" next_question_id=""/>
+      <Help text="1st degree relatives are parents, siblings, children \n\n2nd degree relatives are aunts, uncles, grandparents, grandchildren, nieces and nephews \n\n3rd degree relatives are great grandparents and 1st cousins"/>
+    </Question>
+    <Question id="u50b" text="Were the relatives diagnosed under the age of 50? or with bilateral breast cancer at any age?">
+      <Answer text="No" score="0" next_question_id="3do"/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+      <Help text="Bilateral breast cancer is cancer in both breasts"/>
+    </Question>
+    <Question id="3do" text="Were one or more 1st, 2nd, or 3rd degree relatives diagnosed with ovarian cancer? (any age)">
+      <Answer text="No" score="0" next_question_id="3dbp"/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+      <Help text="1st degree relatives are parents, siblings, children \n\n2nd degree relatives are aunts, uncles, grandparents, grandchildren, nieces and nephews \n\n3rd degree relatives are great grandparents and 1st cousins"/>
+    </Question>
+    <Question id="3dbp" text="Were two or more 1st, 2nd, or 3rd degree relatives diagnosed with breast and/or pancreatic cancer? (any age)">
+      <Answer text="No" score="0" next_question_id=""/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+      <Help text="1st degree relatives are parents, siblings, children \n\n2nd degree relatives are aunts, uncles, grandparents, grandchildren, nieces and nephews \n\n3rd degree relatives are great grandparents and 1st cousins"/>
+    </Question>
+    <Question id="naj" text="Is this person of Ashkenazi Jewish heritage?">
+      <Answer text="No" score="0" next_question_id="fdb"/>
+      <Answer text="Yes" score="0" next_question_id="fdbo"/>
+    </Question>
+    <Question id="fdbo" text="Were any 1st degree relatives diagnosed with breast or ovarian cancer?">
+      <Answer text="No" score="0" next_question_id="sdbo"/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+      <Help text="1st degree relatives are parents, siblings, children"/>
+    </Question>
+    <Question id="sdbo" text="Were two or more 2nd degree relatives diagnosed with breast or ovarian cancer?">
+      <Answer text="No" score="0" next_question_id=""/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+      <Help text="2nd degree relatives are aunts, uncles, grandparents, grandchildren, nieces and nephews"/>
+    </Question>
+    <Question id="fdb" text="Were two or more 1st degree relatives diagnosed with breast cancer?">
+      <Answer text="No" score="0" next_question_id="2db"/>
+      <Answer text="Yes" score="0" next_question_id="nu50"/>
+      <Help text="1st degree relatives are parents, siblings, children"/>
+    </Question>
+    <Question id="nu50" text="Were any relatives diagnosed under the age of 50?">
+      <Answer text="No" score="0" next_question_id="2db"/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+    </Question>
+    <Question id="2db" text="Were three or more 1st or 2nd degree relatives diagnosed with breast cancer? (any age)">
+      <Answer text="No" score="0" next_question_id="2do"/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+      <Help text="1st degree relatives are parents, siblings, children \n\n2nd degree relatives are aunts, uncles, grandparents, grandchildren, nieces and nephews"/>
+    </Question>
+    <Question id="2do" text="Were two or more 1st or 2nd degree relatives diagnosed with ovarian cancer? (any age)">
+      <Answer text="No" score="0" next_question_id=""/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+      <Help text="1st degree relatives are parents, siblings, children \n\n2nd degree relatives are aunts, uncles, grandparents, grandchildren, nieces and nephews"/>
+    </Question>
+    <Question id="mb" text="Has this person or any male relatives been diagnosed with breast cancer?">
+      <Answer text="No" score="0" next_question_id="maj"/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+    </Question>
+    <Question id="maj" text="Is this person of Ashkenazi Jewish heritage?">
+      <Answer text="No" score="0" next_question_id="madb"/>
+      <Answer text="Yes" score="0" next_question_id="mrbo"/>
+    </Question>
+    <Question id="mrbo" text="Does this person have any realtives that have been diagnosed with breast or ovarian cancer?">
+      <Answer text="No" score="0" next_question_id=""/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+    </Question>
+    <Question id="madb" text="Were two or more 1st, 2nd, or 3rd degree relatives diagnosed with breast cancer?">
+      <Answer text="No" score="0" next_question_id="mado"/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+      <Help text="1st degree relatives are parents, siblings, children \n\n2nd degree relatives are aunts, uncles, grandparents, grandchildren, nieces and nephews \n\n3rd degree relatives are great grandparents and 1st cousins"/>
+    </Question>
+    <Question id="mado" text="Were one or more 1st, 2nd, or 3rd degree relatives diagnosed with ovarian cancer? (any age)">
+      <Answer text="No" score="0" next_question_id=""/>
+      <Answer text="Yes" score="1" next_question_id=""/>
+      <Help text="1st degree relatives are parents, siblings, children \n\n2nd degree relatives are aunts, uncles, grandparents, grandchildren, nieces and nephews \n\n3rd degree relatives are great grandparents and 1st cousins"/>
+    </Question>
+  </QuestionList>
+  <ResultList>
+    <Result from_score="0" to_score="0">
+This survey has determined there is an average risk for hereditary breast and/or ovarian cancer: 
+
+Based on the information provided, a breast/ovarian cancer genetics risk evaluation is not recommended.  
+
+This application does not assess risk for other cancers so if there are concerns about the potential for other hereditary cancer syndromes, cancer genetics risk evaluation may still be indicated.  
+
+To contact the Cancer Genetics Program at the James Cancer Hospital and Solove Research Institute call toll free 1-888-329-1654 or email genetics.clinic@osumc.edu
+
+To find a genetic counselor in your area, click here: www.nsgc.org
+	</Result>
+    <Result from_score="1" to_score="*">
+This survey has determined there is an elevated risk for hereditary breast and ovarian cancer:
+
+Cancer genetics risk evaluation with consideration of genetic testing for mutations in the BRCA1/2 genes is warranted.  
+
+To contact the Cancer Genetics Program at the James Cancer Hospital and Solove Research Institute call toll free 1-888-329-1654 or email genetics.clinic@osumc.edu
+
+To find a genetic counselor in your area, click here: www.nsgc.org
+	</Result>
+  </ResultList>
+</Survey>

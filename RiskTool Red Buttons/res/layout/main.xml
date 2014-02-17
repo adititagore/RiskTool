@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/all_white">
+    
+  <ImageView
+      android:id="@+id/picview"
+      android:layout_width="wrap_content"
+      android:layout_height="80dip"
+      android:src="@drawable/logo"/>
+  
+<ScrollView 
+    android:id="@+id/scroller"
+    android:layout_width="fill_parent"
+    android:layout_height="300dip"
+    android:layout_below="@id/picview"
+    android:layout_marginTop="10dip"   >  
+    
+<TextView  
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@id/picview"
+  android:id="@+id/initial"
+  android:scrollbars="vertical"
+  android:scrollbarAlwaysDrawVerticalTrack="true"
+  android:layout_marginTop = "10dip" 
+  android:layout_marginLeft="10dip"  
+   android:textColor ="#7E2217"  
+  />
+
+</ScrollView>
+<TextView  
+  android:layout_width="fill_parent"
+  android:layout_height="150dip"
+  android:layout_below="@id/picview"
+  android:id="@+id/my_xml"
+  android:scrollbars="vertical"
+  android:scrollbarAlwaysDrawVerticalTrack="true"
+  android:layout_marginTop = "10dip" 
+  android:layout_marginLeft="10dip" 
+  android:textColor = "#7E2217"  
+
+  ></TextView>
+<Button 
+		android:background="@drawable/button" 
+		android:id="@+id/no" 
+		android:layout_width="145dip" 
+		android:layout_height="60dip" 
+		android:layout_below="@id/my_xml" 
+		android:layout_alignParentRight="true" 
+		android:layout_marginLeft="10dip" 
+		android:layout_marginRight="10dip" 
+		android:text=" " 
+		android:textColor="#ffffff"></Button>
+ <Button
+        android:id="@+id/yes"
+        android:layout_width="145dip"
+        android:layout_height="60dip"
+        android:layout_toLeftOf="@id/no"
+        android:layout_alignTop="@id/no"
+        android:text=" "
+        android:textColor = "#ffffff"
+        android:background="@drawable/button"/>
+<Button
+        android:id="@+id/button4"
+        android:layout_width="145dip"
+        android:layout_height="60dip"
+        android:layout_below="@id/no"
+        android:layout_alignParentRight="true"
+         android:layout_marginRight="10dip"    
+        android:layout_marginLeft="10dip" 
+         android:layout_marginTop="10dip"        
+        android:text=" " 
+        android:textColor = "#ffffff"
+        android:background="@drawable/button"/>
+<Button
+        android:id="@+id/button3"
+        android:layout_width="145dip"
+        android:layout_height="60dip"
+        android:layout_toLeftOf="@id/button4"
+        android:layout_alignTop="@id/button4"
+        android:text=" "
+        android:textColor = "#ffffff"
+        android:background="@drawable/button"/>
+    
+ <Button
+        android:id="@+id/restart"
+        android:layout_width="80dip"
+        android:layout_height="50dip"
+        android:layout_below="@id/button3"        
+        android:layout_marginLeft="230dip"  
+         android:layout_marginTop="50dip"   
+        android:text=" "
+        android:textColor = "#ffffff"
+        android:background="@drawable/button"/>
+ 
+ <Button
+        android:id="@+id/back"
+        android:layout_width="80dip"
+        android:layout_height="50dip"
+        android:layout_below="@id/button4"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"     
+        android:layout_marginRight="230dip" 
+        android:layout_marginTop="50dip"   
+        android:text=" " 
+        android:textColor = "#ffffff"
+        android:background="@drawable/button"/>
+        
+ <Button
+        android:id="@+id/help"
+        android:layout_width="80dip"
+        android:layout_height="50dip"
+        android:layout_below="@id/button3"        
+        android:layout_marginLeft="120dip"  
+        android:layout_marginTop="50dip"    
+        android:text=" " 
+        android:textColor = "#ffffff"
+        android:background="@drawable/button"/>
+        
+ <Button
+        android:id="@+id/continu"
+        android:layout_width="80dip"
+        android:layout_height="50dip"
+        android:layout_below="@id/scroller"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"     
+        android:layout_marginRight="10dip"  
+         android:layout_marginTop="20dip"     
+        android:text=" " 
+        android:textColor = "#ffffff"
+        android:background="@drawable/button"/>
+ 
+
+</RelativeLayout>
+
+ 
